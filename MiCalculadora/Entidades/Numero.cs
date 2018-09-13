@@ -45,8 +45,8 @@ namespace Entidades
 
 			for (int i = 0; i < binario.Length; i++)
 			{
-				int aux = int.Parse(binario+i);
-				cimal += aux * (int)Math.Pow(2, binario.Length - i);
+				int aux = int.Parse(binario[i].ToString());
+				cimal += aux * (int)Math.Pow(2, binario.Length - 1 - i);
 			}
 			return cimal.ToString();
 		}
